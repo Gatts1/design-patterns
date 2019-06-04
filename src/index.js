@@ -1,12 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import { render } from "react-dom";
+// import Visibility from "./function-as-children/visibility";
+// import Visibility from "./render-props/visibility";
+import AppVisibility from "./high-order-component/visibility";
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+render (<AppVisibility/>, document.getElementById("root"));
